@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://buj73velq1icb"]
+
+[ext_resource type="Script" uid="uid://bwgf3r1i0sr32" path="res://Lockers/Programmers/BionicMango/peggle_board.gd" id="1_g8rvb"]
+[ext_resource type="Texture2D" uid="uid://cka6c0xlqvmx3" path="res://Assets/Art/Characters/Chinchilla_2-Sheet (1).png" id="1_j1l4d"]
+[ext_resource type="PackedScene" uid="uid://hxtqjqdwxevl" path="res://Lockers/Programmers/BionicMango/peggle_ball.tscn" id="2_8lsjk"]
+[ext_resource type="PackedScene" uid="uid://kdyyhi2j2nne" path="res://Lockers/Programmers/BionicMango/peggle_peg.tscn" id="4_ryebi"]
+
+[node name="PeggleBoard" type="Node2D" unique_id=1037463456]
+editor_description = "A prototype peggleboard (with placeholder art)"
+script = ExtResource("1_g8rvb")
+ball = ExtResource("2_8lsjk")
+shoot_offset = Vector2(0, 20)
+shoot_strength = 200.0
+
+[node name="PeggleBallShooter" type="Sprite2D" parent="." unique_id=621117258]
+position = Vector2(228, 17)
+texture = ExtResource("1_j1l4d")
+hframes = 5
+
+[node name="Pegs" type="Node2D" parent="." unique_id=200026943]
+
+[node name="PegglePeg" parent="Pegs" unique_id=1411103836 instance=ExtResource("4_ryebi")]
+position = Vector2(214, 134)
+
+[node name="PegglePeg2" parent="Pegs" unique_id=494578711 instance=ExtResource("4_ryebi")]
+position = Vector2(405, 156)
+
+[node name="PegglePeg3" parent="Pegs" unique_id=178260736 instance=ExtResource("4_ryebi")]
+position = Vector2(399, 217)
+
+[node name="PegglePeg4" parent="Pegs" unique_id=875669569 instance=ExtResource("4_ryebi")]
+position = Vector2(216, 208)
+
+[node name="PegglePeg5" parent="Pegs" unique_id=1539789439 instance=ExtResource("4_ryebi")]
+position = Vector2(290, 138)
+
+[node name="PegglePeg6" parent="Pegs" unique_id=1348138800 instance=ExtResource("4_ryebi")]
+position = Vector2(412, 82)
+
+[node name="PegglePeg7" parent="Pegs" unique_id=2110922431 instance=ExtResource("4_ryebi")]
+position = Vector2(54, 59)
+
+[node name="PegglePeg8" parent="Pegs" unique_id=1446963668 instance=ExtResource("4_ryebi")]
+position = Vector2(114, 236)
+
+[node name="PegglePeg9" parent="Pegs" unique_id=1802255788 instance=ExtResource("4_ryebi")]
+position = Vector2(37, 171)
+
+[node name="PegglePeg10" parent="Pegs" unique_id=2006107150 instance=ExtResource("4_ryebi")]
+position = Vector2(311, 197)
+
+[node name="PegglePeg11" parent="Pegs" unique_id=393130168 instance=ExtResource("4_ryebi")]
+position = Vector2(339, 114)
+
+[node name="PegglePeg12" parent="Pegs" unique_id=1163546502 instance=ExtResource("4_ryebi")]
+position = Vector2(111, 110)
